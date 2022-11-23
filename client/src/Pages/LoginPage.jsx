@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import { adminLogin } from '../redux/action/adminAction'
 import classnames from 'classnames'
-
+import image1 from "../Style/Images/My_project.png"
 
 
 const LoginPage = () => {
@@ -45,12 +45,17 @@ const LoginPage = () => {
 
     
     return (
-        <div className="div1">
-            <div className="row  row1">
-                <div className="col-md-8">
-                    <div className="d-flex justify-content-md-center align-items-center vh-100">
+        <div>
+                <div className='header'> IIITL ATTENDENCE</div>
+
+        <div className="login-cont">
+     
+            <div className="row  row2 ">
+            <img src={image1}  className="attend-img" alt=""/>
+        
+                    <div className="d-flex login-panel  align-items-center ">
                         <div>
-                            <h1 className="display-4 text-center">ADMIN</h1>
+                            <h1 className="h1 text-center">ADMIN</h1>
                             <form noValidate onSubmit={fromHandler}>
                                 <div className="form-group">
                                     <label className='h5' htmlFor="emailId">Registration Number</label>
@@ -79,8 +84,9 @@ const LoginPage = () => {
                                 {!isLoading && <button type="submit" className="btn btn-info updatebtn btn-block">Login</button>}
                             </form>
                         </div>
-                    </div>
+                    
                 </div>
+            </div>
             </div>
             </div>
     )

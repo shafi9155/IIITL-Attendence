@@ -4,6 +4,7 @@ import { useHistory, Link } from 'react-router-dom'
 import { facultyLogin } from '../redux/action/facultyAction'
 import { studentLogin } from '../redux/action/studentAction'
 import classnames from 'classnames'
+import image1 from "../Style/Images/My_project.png"
 
 import '../Style/facultyStudentLogin.css'
 
@@ -90,14 +91,17 @@ const FacultyStudentLoginPags = () => {
     }, [store.errorHelper, store.student.isAuthenticated])
 
     return (
-        <div className="container-fluid p-0 m-0">
-        <div className='header'> IIITL ATTENDENCE</div>
-            <div className="row" id="trail">
-                <div className="col-md-6">
-                </div>
+        <div className='container-fluid p-0 m-0'>
+          <div className='header'> IIITL ATTENDENCE</div>
+        <div className=" div2">
+      
+            <div className=" row row2">
+            <img src={image1}  className="attend-img1" alt=""/>
+             
                 
                 <div className="col-md-6">
                     <div className="row m-5">
+                   
                         <div className="col-md-8 m-auto border" style={{ backgroundColor: "white", borderRadius: "1.2rem", padding: "1rem 1rem 0rem 1rem" }}>
                             <div>
                                 <h3 className="text-center ">FACULTY</h3>
@@ -181,6 +185,7 @@ const FacultyStudentLoginPags = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
