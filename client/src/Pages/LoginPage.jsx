@@ -46,7 +46,7 @@ const LoginPage = () => {
     
     return (
         <div>
-                <div className='header'> IIITL ATTENDENCE</div>
+                <div className='header'> IIITL ATTENDANCE</div>
 
         <div className="login-cont">
      

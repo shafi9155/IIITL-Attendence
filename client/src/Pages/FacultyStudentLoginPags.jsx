@@ -92,7 +92,7 @@ const FacultyStudentLoginPags = () => {
 
     return (
         <div className='container-fluid p-0 m-0'>
-          <div className='header'> IIITL ATTENDENCE</div>
+          <div className='header'> IIITL ATTENDANCE</div>
         <div className=" div2">
       
             <div className=" row row2">
